@@ -3,7 +3,7 @@ import statsmodels.api as sm
 
 
 
-df = pd.read_excel("GridExport.xlsx")
+df = pd.read_excel("GridExportBearbeitet.xlsx")
 
 # Create a fixed effect model
 # The fixed effect model is a regression model that includes a set of dummy variables, one for each individual in the sample.
@@ -28,5 +28,5 @@ results = model.fit()
 print(results.summary())
 
 
-# The coefficient is -0.0012, which means that for every 1% increase in the percentage of Women in a company, the average YTD decreases by 0.0012%.
+# The coefficient is -0.0011, which means that for every 1% increase in the percentage of Women in a company, the average YTD decreases by 0.0011%.
 # This is a small effect, the statistical significance is to be valued depending on our estimations
